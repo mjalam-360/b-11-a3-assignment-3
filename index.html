@@ -1,32 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B-11-A3-Assignment-3</title>
-    <!-- google font CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <!-- font awesome CDN -->
-    <script src="https://kit.fontawesome.com/3dc644e50d.js" crossorigin="anonymous"></script>
-    <!-- tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script> 
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily: {
-                sora: ["Sora", "serif"],
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B-11-A3-Assignment-3</title>
+  <!-- google font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <!-- font awesome CDN -->
+  <script src="https://kit.fontawesome.com/3dc644e50d.js" crossorigin="anonymous"></script>
+  <!-- tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            sora: ["Sora", "serif"],
           }
         }
-      </script>      
+      }
+    }
+  </script>
 </head>
+
 <body class="font-sora">
+  <header class="bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3]">
+    <!-- Navbar section -->
+    <nav class="flex justify-around items-center w-full h-[100px]">
+      <!-- logo image -->
+      <div>
+        <img class="w-[150px] h-[60px]" src="c2-assets/logo-header.png" alt="">
+      </div>
+      <!-- nav Item -->
+      <ul class="flex gap-4">
+        <li>Product</li>
+        <li>Services</li>
+        <li>Contact Us</li>
+      </ul>
+      <div>
+        <!-- Button section -->
+        <button class="border border-[#179800] p-[10px] w-[117px] h-[45px] rounded-xl">Login</button>
+        <button class="bg-[#179800] text-white p-[10px] w-[117px] h-[45px] rounded-xl">Register</button>
+      </div>
+    </nav>
+    <section class="grid grid-cols-1 space-y-8">
+      <!-- hero text section -->
+      <div class="text-center p-4">
+        <h1 class="text-[40px] lg:text-[56px] font-semibold">Freshness <span class="text-[#179800]">You Can
+            <br>Count</span> On, Prices You’ll Love!</h1>
+        <p class="text-[20px] font-normal">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
+          <br> staples, we’ve got you covered every day!
+        </p>
+      </div>
+      <div class="">
+        <!-- banner -->
+        <img class=" p-4 w-[700px] h-auto mx-auto" src="c2-assets/hero-vegetables.png" alt="">
+      </div>
+    </section>
+  </header>
+  <main>
+    <div class="py-10">
+      <div class="container mx-auto">
+        <!-- section title -->
+        <h1 class="text-2xl font-bold text-green-600 mx-4 mb-8">Services</h1>
+        <!-- card container -->
+        <div class="grid grid-cols-1 mx-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+          <!-- card 1 -->
+          <div class="bg-[#EFEBE3] rounded-xl p-8 flex flex-col items-center text-center w-[400px] h-[300px]">
+            <img src="c2-assets/service.png" alt="" class="w-20 h-20 mb-4 bg-white rounded-[50%] p-4">
+            <h2 class="text-lg font-semibold mb-2">24/7 Services</h2>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt</p>
+          </div>
+          <!-- card 2 -->
+          <div class="bg-[#EFEBE3] rounded-xl p-8 flex flex-col items-center text-center w-[400px] h-[300px]">
+            <img src="c2-assets/delivery.png" alt="" class="w-20 h-20 mb-4 bg-white rounded-[50%] p-4">
+            <h2 class="text-lg font-semibold mb-2">Fast Delivery</h2>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt</p>
+          </div>
+          <!-- card 3 -->
+          <div class="bg-[#EFEBE3] rounded-xl p-8 flex flex-col items-center text-center w-[400px] h-[300px]">
+            <img src="c2-assets/healthy.png" alt="" class="w-20 h-20 mb-4 bg-white rounded-[50%] p-4">
+            <h2 class="text-lg font-semibold mb-2">healthy products</h2>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#EFEBE3] py-10">
+      <!-- grid container -->
+      <div class="container mx-auto">
+        <!-- grid title -->
+        <h1 class="text-2xl font-bold text-green-600 mx-4 mb-8">Popular Products</h1>
+        <!-- grid layout -->
+        <section>
+          <div class="grid grid-cols-1 gap-6">
+            <!-- offer banner -->
+            <div class="relative">
+              <div
+                class="w-[400px] h-[300px] bg-gradient-to-r from-lime-500 to-green-200 rounded-xl p-6 flex flex-col text-white relative overflow-hidden">
+                <h2 class="text-4xl font-bold mb-4">30% off</h2>
+                <p class="text-lg">
+                  Discover a world of treats, toys, and essentials handpicked for you.
+                </p>
+                <div>
+                  <button class="mt-4 bg-white text-black font-medium py-2 px-4 rounded-lg shadow-md hover:bg-gray-300">
+                    Buy Now
+                  </button>
+                </div>
+                <!-- Image -->
+                <div class="absolute -right-0 bottom-0 w-[180px] h-auto">
+                  <img src="c2-assets/vegetable-offer.png" alt="Vegetable Offer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
 </body>
 </html>
